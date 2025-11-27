@@ -69,6 +69,7 @@ namespace backend.Services
                 new Claim(ClaimTypes.Name, user.Name),
                 new Claim(ClaimTypes.Role, user.Role.ToString())
             };
+            // Bonjour
 
             var token = new JwtSecurityToken(
                 issuer: jwt["Issuer"],
